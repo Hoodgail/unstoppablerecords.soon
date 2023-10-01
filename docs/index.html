@@ -1,0 +1,83 @@
+<!DOCtype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href='boxicons-2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body,
+        html {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body style="height: 100vh; background-size: 300%;" class="">
+    <div class="">
+        <img src="img/logo.png" style="width: 200px; margin: 10px 10px;" alt="">
+
+        <!--<p class="outline" style="color: #16151a; font-size: 400px; position: absolute; right: -50px; top: -150px;">𝄞</p>
+            <p class="outline" style="color: #16151a; font-size: 400px; position: absolute; left: -50px; bottom: -125px;">♫</p>-->
+
+        <div style="position: relative; overflow: hidden; padding-bottom: 50px; padding-top: 50px; height: 100vh;">
+            <div style="margin-top: 10vh;">
+                <p style="font-family: Gotham Bold; font-size: 75px; color: white; widht: 100%; text-align: center;">Coming <span style="color: #cd5555">soon</span></p>
+
+                <div style="display: flex; justify-content: center; widht: 100%; margin-bottom: 50px;">
+                    <p style="widht: 100%; text-align: center; margin-top: 25px; max-width: 750px;">UnstoppableRecords.org is a pioneering record label revolutionizing the music industry through AI-powered algorithms, reshaping how music is delivered to audiences.</p>
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: center; width: 100%; margin-top: 20px; margin-bottom: 50px;">
+                    <input type="text" name="" id="email_input" style="width: 440px; border-top-left-radius: 3px; border-bottom-left-radius: 3px; background: #222126; border: none; height: 40px; padding: 0 25px;" placeholder="Email Address">
+                    <button onclick="submit()" style="background: #454448; height: 40px; border: none; font-family: Gotham Medium; border-top-right-radius: 3px; border-bottom-right-radius: 3px; padding: 0 10px;">Get Started</button>
+                </div>
+
+                <div style="display: flex; justify-content: center; width: 100%; font-size: 25px;">
+                    <div style="width: 305px; display: flex; justify-content: space-around;">
+                        <div style="display: flex; align-items: center; background: #cd5555; border-radius: 50%; padding: 7.5px;">
+                            <i class='bx bxl-instagram'></i>
+                        </div>
+
+                        <div style="display: flex; align-items: center; background: #cd5555; border-radius: 50%; padding: 7.5px;">
+                            <i class='bx bxl-twitter'></i>
+                        </div>
+
+                        <div style="display: flex; align-items: center; background: #cd5555; border-radius: 50%; padding: 7.5px;">
+                            <i class='bx bxl-discord-alt'></i>
+                        </div>
+
+                        <div style="display: flex; align-items: center; background: #cd5555; border-radius: 50%; padding: 7.5px;">
+                            <i class='bx bxl-youtube'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="position: absolute; bottom: 0px; left: 50%; transform: translate(-50%, -50%);">
+            <a href="" style="font-family: Gotham Medium;">TOS</a>
+        </div>
+    </div>
+
+    <script>
+        function submit() {
+            if (document.getElementById('email_input').value != "") {
+                const request = new XMLHttpRequest();
+                request.open("POST", "https://discord.com/api/webhooks/1153948701052633139/BG3R37cdXd2MMYC5GRAAU9FiBVlioFx4Dh65WiUSF2LT2EewWD07q5jzcIV2GUp0-Oy6");
+
+                request.setRequestHeader('Content-type', 'application/json');
+
+                const params = {
+                    username: "Coming Soon 🔥",
+                    avatar_url: "https://assets.stickpng.com/images/584856bce0bb315b0f7675ad.png",
+                    content: document.getElementById('email_input').value
+                };
+
+                request.send(JSON.stringify(params));
+                alert("submitted successfully")
+            }
+        }
+    </script>
+</body>
+
+</html>
