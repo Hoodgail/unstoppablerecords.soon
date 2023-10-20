@@ -3,8 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redirecting...</title>
+    <meta
+      name="description"
+      content="Join the UnstoppableRecords.org discord server and connect with other artists. We are offering 
+      free promotion, distribution, and a thriving new community."
+    />
+    <title>Unstoppable Records</title>
+    <link rel="icon" type="image/png" href="record.png" />
     <meta http-equiv="refresh" content="0;url=https://discord.gg/v6Veu4eSyp" />
+    <meta
+      property="og:image"
+      content="https://unstoppablerecords.org/thumb.png"
+    />
   </head>
   <body>
     <p>
