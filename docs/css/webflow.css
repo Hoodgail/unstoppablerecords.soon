@@ -4130,6 +4130,7 @@ figcaption {
      object-fit: cover;
      border-radius: 24px;
      transition: transform .3s, box-shadow .3s;
+     cursor: pointer;
 }
 
 .image-blog:hover {
